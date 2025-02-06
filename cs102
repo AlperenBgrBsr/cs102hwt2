@@ -10,8 +10,8 @@ public class ArrayOperations{
         }
         return array;
     }
-    public static int average(int[] numbers){
-        int sum = 0;
+    public static double average(int[] numbers){
+        double sum = 0;
         for(int i = 0; i < numbers.length; i++){
             sum += numbers[i];
         }
