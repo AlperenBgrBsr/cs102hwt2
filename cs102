@@ -23,7 +23,7 @@ public class ArrayOperations{
     }
     public static double[] standartDeviation(int[] numbers){
         double[] deviation = new int[numbers.length];
-        int average = average(numbers);
+        double average = average(numbers);
         for(int i = 0; i < numbers.length; i++){
             deviation[i] = numbers[i] - average;
         }
