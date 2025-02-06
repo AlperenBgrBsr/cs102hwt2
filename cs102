@@ -10,7 +10,8 @@ public class ArrayOperations{
         }
         return array;
     }
-    public static double average(int[] numbers){
+    public static double average(int[] numbers)
+    {
         double sum = 0;
         for(int i = 0; i < numbers.length; i++){
             sum += numbers[i];
@@ -21,7 +22,8 @@ public class ArrayOperations{
         }
         return sum / numbers.length;
     }
-    public static double[] standartDeviation(int[] numbers){
+    public static double[] standartDeviation(int[] numbers)
+    {
         double[] deviation = new int[numbers.length];
         double average = average(numbers);
         for(int i = 0; i < numbers.length; i++){
@@ -50,5 +52,35 @@ public class ArrayOperations{
 
         return sum;
 
+    }
+
+    public static int min (int[] numbers)
+    {
+        int minNum = 100;
+
+        for (int i = 0; i < numbers.length; i++)
+        {
+            if (numbers[i] < minNum)
+            {
+                minNum = numbers[i];
+            }
+        }
+
+        return minNum;
+    }
+
+    public static int max (int[] numbers)
+    {
+        int maxNum = 0;
+
+        for (int i = 0; i < numbers.length; i++)
+        {
+            if (numbers[i] > maxNum)
+            {
+                maxNum = numbers[i];
+            }
+        }
+
+        return maxNum;
     }
 }
